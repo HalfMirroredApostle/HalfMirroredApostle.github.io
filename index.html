@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samim | Cybersecurity</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        nav {
+            border-bottom: 1px solid #1f2933;
+            padding: 20px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            color: #9da7b3;
+        }
+
+        .nav-links a:hover {
+            color: #58a6ff;
+        }
+
+        .hero {
+            padding: 120px 0 100px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #58a6ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #9da7b3;
+            font-size: 1.2rem;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 12px 20px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            border-color: #58a6ff;
+            color: #58a6ff;
+        }
+
+        section {
+            padding: 80px 0;
+            border-top: 1px solid #1f2933;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            max-width: 750px;
+            color: #9da7b3;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #1f2933;
+            border-radius: 8px;
+            padding: 25px;
+            background: #0d131a;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #8b949e;
+        }
+
+        .tags {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            padding: 4px 9px;
+            border-radius: 4px;
+            background: #161b22;
+            color: #58a6ff;
+        }
+
+        footer {
+            padding: 40px 0;
+            color: #6e7681;
+            text-align: center;
+            border-top: 1px solid #1f2933;
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                gap: 12px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Samim</div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#writeups">Writeups</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <h1>
+                    Learning to<br>
+                    <span>break things.</span>
+                </h1>
+
+                <p>
+                    Cybersecurity student exploring offensive security,
+                    OSINT, web security, and CTFs. This site documents
+                    what I learn along the way.
+                </p>
+
+                <div class="buttons">
+                    <a class="button" href="#writeups">View Writeups</a>
+
+                    <a class="button"
+                       href="https://github.com/HalfMirroredApostle"
+                       target="_blank">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+
+                <p class="about">
+                    I'm Samim, a cybersecurity student interested in
+                    understanding how systems work, how they break,
+                    and how they can be secured.
+
+                    <br><br>
+
+                    Currently focused on building practical skills through
+                    TryHackMe, OSINT challenges, web security labs,
+                    and personal projects.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="writeups">
+            <div class="container">
+                <h2>Writeups</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>TryHackMe</h3>
+
+                        <p>
+                            Notes and writeups from rooms covering
+                            reconnaissance, OSINT, networking,
+                            web security, and more.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">OSINT</span>
+                            <span class="tag">Recon</span>
+                            <span class="tag">CTF</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h3>PortSwigger</h3>
+
+                        <p>
+                            Practical notes and experiments from
+                            Web Security Academy labs.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Burp Suite</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <h3>OSINT</h3>
+
+                        <p>
+                            Investigations involving metadata,
+                            geolocation, search techniques,
+                            usernames, and open-source intelligence.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">OSINT</span>
+                            <span class="tag">Metadata</span>
+                            <span class="tag">Geolocation</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>Coming Soon</h3>
+
+                        <p>
+                            Personal cybersecurity projects will
+                            appear here as I build them.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            © 2026 Samim · HalfMirroredApostle
+        </div>
+    </footer>
+
+</body>
+</html>
